@@ -1,6 +1,6 @@
 def userInfo(name, age, gender):
     """
-    简单方法
+    简单方法:::
     :param name:
     :param age:
     :param gender:
