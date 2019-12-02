@@ -7,27 +7,27 @@ import random
 
 # todo 线索内容 修改此处（销售需要与下面的门店对应）
 upload_data = [
-    # {
-    #     'customerName': '张三',
-    #     'customerPhone': str(str(random.randint(130, 139)) + str(random.randint(10000000, 99999999))),
-    #     'intentCarModel': None,
-    #     'registerDateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-    #     'extData': {},
-    #     'spiderCrawlLogId': 1,
-    #     'salesName': '牛逼',
-    #     'sourceCategory': 'DCC-400==>400-汽车之家'
-    # },
-    # {
-    #     'customerName': '李四',
-    #     'customerPhone': str(str(random.randint(130, 139)) + str(random.randint(10000000, 99999999))),
-    #     'intentCarModel': None,
-    #     'registerDateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-    #     'extData': {},
-    #     'spiderCrawlLogId': 1,
-    #     # 'salesName': None,
-    #     'salesName': 'f',
-    #     'sourceCategory': 'DCC-400==>400-汽车之家'
-    # }
+    {
+        'customerName': '张三',
+        'customerPhone': str(str(random.randint(130, 139)) + str(random.randint(10000000, 99999999))),
+        'intentCarModel': None,
+        'registerDateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        'extData': {},
+        'spiderCrawlLogId': 1,
+        'salesName': 'f',
+        'sourceCategory': 'DCC-400==>400-汽车之家'
+    },
+    {
+        'customerName': '李四',
+        'customerPhone': str(str(random.randint(130, 139)) + str(random.randint(10000000, 99999999))),
+        'intentCarModel': None,
+        'registerDateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        'extData': {},
+        'spiderCrawlLogId': 1,
+        # 'salesName': None,
+        'salesName': 'f',
+        'sourceCategory': 'DCC-400==>400-汽车之家'
+    }
 
     # {
     #     'customerName': '李四',
@@ -61,33 +61,33 @@ upload_data = [
     #     "sourceCategory": "DCC-400==＞400-汽车之家"
     # }
 
-    {
-        "customerName": "李四",
-        "customerPhone": "13512637350",
-        "intentCarModel": None,
-        "registerDateTime": "2019-11-20 16:38:21",
-        "extData": {},
-        "spiderCrawlLogId": 1,
-        "salesName": None,
-        "sourceCategory": "DCC-400==＞400-易车"
-    },
-    {
-        "customerName": "李四",
-        "customerPhone": "13569438926",
-        "intentCarModel": None,
-        "registerDateTime": "2019-11-20 16:38:21",
-        "extData": {},
-        "spiderCrawlLogId": 1,
-        "salesName": None,
-        "sourceCategory": "DCC-400==＞400-易车"
-    }
+    # {
+    #     "customerName": "李四",
+    #     "customerPhone": "13512637350",
+    #     "intentCarModel": None,
+    #     "registerDateTime": "2019-11-20 16:38:21",
+    #     "extData": {},
+    #     "spiderCrawlLogId": 1,
+    #     "salesName": None,
+    #     "sourceCategory": "DCC-400==＞400-易车"
+    # },
+    # {
+    #     "customerName": "李四",
+    #     "customerPhone": "13569438926",
+    #     "intentCarModel": None,
+    #     "registerDateTime": "2019-11-20 16:38:21",
+    #     "extData": {},
+    #     "spiderCrawlLogId": 1,
+    #     "salesName": None,
+    #     "sourceCategory": "DCC-400==＞400-易车"
+    # }
 
 ]
 
 # todo 来源/门店（需要与上面的销售对应）
 upload_body = dict()
 upload_body['data'] = json.dumps(upload_data, ensure_ascii=False)
-upload_body['orgId'] = 39
+upload_body['orgId'] = 29
 upload_body['followDate'] = '2019-11-05 10:06:00'
 upload_body['followBy'] = 'CcUser'
 
